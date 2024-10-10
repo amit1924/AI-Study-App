@@ -11,11 +11,20 @@ const cors = require("cors");
 dotenv.config();
 const app = express();
 app.use(express.json());
+// app.use(
+//   cors({
+//     origin: "https://ai-study-app-frontend.vercel.app",
+//     methods: ["GET"],
+//     credentials: true, // Enable sending cookies and headers with requests if necessary
+//   })
+// );
+
 app.use(
   cors({
     origin: "https://ai-study-app-frontend.vercel.app",
-    methods: ["GET"],
-    credentials: true, // Enable sending cookies and headers with requests if necessary
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true,
   })
 );
 
