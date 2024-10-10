@@ -66,7 +66,7 @@ const Navbar = () => {
         <div
           className={`${
             isOpen ? "block" : "hidden"
-          } md:flex md:items-center md:space-x-6 absolute md:relative top-0 left-0 w-full md:w-auto bg-gradient-to-r from-blue-500 to-purple-600 md:bg-transparent p-6 md:p-0 text-center transition-all duration-300 ease-in-out`}
+          } md:flex md:items-center md:space-x-6 absolute md:relative top-0 left-0 w-full md:w-auto bg-gradient-to-r from-blue-500 to-purple-600 md:bg-transparent p-6 md:p-0 text-center transition-all duration-300 ease-in-out z-50`}
         >
           <Link
             className="block text-lg px-4 py-2 rounded-md hover:bg-white hover:text-blue-500 transition-all duration-300 md:mr-4"
