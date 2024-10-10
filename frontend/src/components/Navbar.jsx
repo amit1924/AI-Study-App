@@ -96,6 +96,27 @@ const Navbar = () => {
           >
             Chemistry
           </Link>
+          <Link
+            className="block text-lg px-4 py-2 rounded-md hover:bg-white hover:text-blue-500 transition-all duration-300"
+            to="/chemistry"
+            onClick={() => setIsOpen(false)}
+          >
+            Polity
+          </Link>
+          <Link
+            className="block text-lg px-4 py-2 rounded-md hover:bg-white hover:text-blue-500 transition-all duration-300"
+            to="/chemistry"
+            onClick={() => setIsOpen(false)}
+          >
+            Geography
+          </Link>
+          <Link
+            className="block text-lg px-4 py-2 rounded-md hover:bg-white hover:text-blue-500 transition-all duration-300"
+            to="/chemistry"
+            onClick={() => setIsOpen(false)}
+          >
+            Economics
+          </Link>
         </div>
       </nav>
     </div>
