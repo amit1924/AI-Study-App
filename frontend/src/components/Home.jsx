@@ -3,7 +3,7 @@ import { motion } from "framer-motion"; // Import Framer Motion for animations
 
 const Home = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-r from-pink-950 to-green-950 text-gray-800">
+    <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-r from-pink-950 to-green-950 text-yellow-700">
       <motion.h1
         className="text-5xl font-bold mb-4 animate__animated animate__fadeInDown"
         initial={{ opacity: 0, y: -50 }}
