@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { useParams, Link } from "react-router-dom"; // Import Link
+import { useParams, Link } from "react-router-dom";
+import { Marked } from "marked"; // Import Link
 
 const Section = () => {
   const { section } = useParams(); // Get section from URL params
@@ -62,9 +63,12 @@ const Section = () => {
         {articles.length > 0 ? (
           articles.map((article) => (
             <div key={article.id} className="p-4 border rounded shadow">
-              <h2 className="text-xl font-semibold">{article.title}</h2>
-              <p>{article.description.substring(0, 150)}...</p>{" "}
-              {/* Trim the description */}
+              <h2 className="text-xl font-semibold text-red-700">
+                {article.title}
+              </h2>
+              <p className="markdown-content prose prose-lg">
+                {article.description.substring(0, 150)}...
+              </p>{" "}
               <Link
                 to={`/articles/${article.id}`}
                 className="text-blue-500 hover:underline"

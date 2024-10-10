@@ -59,6 +59,7 @@ const topics = {
     "Thrust and Pressure",
     "Archimedes Principle",
     "Buoyancy",
+    "All formulas of Physics from 7th to class 10th",
   ],
   Chemistry: [
     "Organic Chemistry",
