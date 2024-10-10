@@ -4,7 +4,7 @@ const axios = require("axios");
 const cron = require("node-cron");
 const dotenv = require("dotenv");
 const Article = require("../models/Article");
-const topics = require("../src/topics");
+const topics = require("../topics");
 const articleRoutes = require("../routes/articleRoutes");
 const cors = require("cors");
 
