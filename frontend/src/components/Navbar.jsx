@@ -12,7 +12,15 @@ const Navbar = () => {
     <div className="bg-gray-50 shadow-lg">
       <nav className="bg-gradient-to-r from-blue-500 to-purple-600 p-4 text-white flex justify-between items-center">
         {/* Logo or Title */}
-        <div className="text-2xl font-bold tracking-wide">My Website</div>
+        <div className="text-2xl font-bold tracking-wide">
+          <img
+            src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202409/how-ai-is-shaping-future-of-international-education-for-study-abroad-students-183406721-1x1.jpg?VersionId=vUdOoOawJNFs69EQBsFzpRPA8CTSozwx"
+            alt="ai"
+            width={50}
+            height={20}
+            className="rounded-3xl transition-all duration-100 hover:translate-x-4"
+          />
+        </div>
 
         {/* Hamburger Menu for Mobile */}
         <div className="md:hidden">

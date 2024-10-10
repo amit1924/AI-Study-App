@@ -1,4 +1,3 @@
-// src/components/ArticleDetail.js
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { marked } from "marked"; // Import marked for Markdown rendering
@@ -43,7 +42,7 @@ const Article = () => {
   return (
     <div className="container mx-auto p-4">
       {article && (
-        <div className="p-6 bg-white border rounded-lg shadow-md">
+        <div className="p-6 bg-slate-950  border rounded-lg shadow-md">
           <h1 className="text-3xl font-bold text-blue-600 mb-4">
             {article.title}
           </h1>

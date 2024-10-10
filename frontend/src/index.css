@@ -16,11 +16,11 @@
 }
 
 .markdown-content p {
-  @apply mb-4 text-gray-800; /* Paragraph */
+  @apply mb-4 text-white font-bold; /* Paragraph */
 }
 
 .markdown-content ul {
-  @apply list-disc list-inside mb-4 text-gray-800; /* Unordered list */
+  @apply list-disc list-inside mb-4 text-pink-800 font-bold; /* Unordered list */
 }
 
 .markdown-content li {
