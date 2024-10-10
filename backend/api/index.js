@@ -13,7 +13,7 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://ai-study-app-frontend.vercel.app/", // Replace with your frontend URL
+    origin: "https://ai-study-app-frontend.vercel.app", // Replace with your frontend URL
     methods: ["GET"],
     // credentials: true, // Enable sending cookies and headers with requests if necessary
   })
