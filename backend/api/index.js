@@ -60,9 +60,9 @@ async function fetchContentFromGeminiAI(section) {
         ],
       },
       {
-        headers: {
-          "Content-Type": "application/json",
-        },
+        // headers: {
+        //   "Content-Type": "application/json",
+        // },
       }
     );
 
@@ -86,20 +86,20 @@ async function fetchContentFromGeminiAI(section) {
 
 // Schedule content fetching daily for each section
 
-cron.schedule("0 * * * *", async () => {
-  console.log("Fetching new content from Gemini AI...");
-  await Promise.all([
-    fetchContentFromGeminiAI("History"),
-    fetchContentFromGeminiAI("Biology"),
-    fetchContentFromGeminiAI("Physics"),
-    fetchContentFromGeminiAI("Chemistry"),
-  ]);
-  console.log("Content fetching complete.");
-});
-// fetchContentFromGeminiAI("History");
-// fetchContentFromGeminiAI("Biology");
-// fetchContentFromGeminiAI("Physics");
-// fetchContentFromGeminiAI("Chemistry");
+// cron.schedule("0 * * * *", async () => {
+//   console.log("Fetching new content from Gemini AI...");
+//   await Promise.all([
+//     fetchContentFromGeminiAI("History"),
+//     fetchContentFromGeminiAI("Biology"),
+//     fetchContentFromGeminiAI("Physics"),
+//     fetchContentFromGeminiAI("Chemistry"),
+//   ]);
+//   console.log("Content fetching complete.");
+// });
+fetchContentFromGeminiAI("History");
+fetchContentFromGeminiAI("Biology");
+fetchContentFromGeminiAI("Physics");
+fetchContentFromGeminiAI("Chemistry");
 
 // API routes for articles
 app.use("/articles", articleRoutes);
