@@ -11,15 +11,13 @@ const cors = require("cors");
 dotenv.config();
 const app = express();
 app.use(express.json());
-// app.use(
-//   cors({
-//     origin: "https://ai-study-app-frontend.vercel.app",
-//     methods: ["GET"],
-//     credentials: true, // Enable sending cookies and headers with requests if necessary
-//   })
-// );
-
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://ai-study-app-frontend.vercel.app",
+    methods: ["GET"],
+    credentials: true, // Enable sending cookies and headers with requests if necessary
+  })
+);
 
 // Preflight response for all routes
 app.options("*", cors());
@@ -105,7 +103,7 @@ fetchContentFromGeminiAI("Chemistry");
 app.use("/articles", articleRoutes);
 
 const PORT = process.env.PORT || 3001;
+dbConnect();
 app.listen(PORT, () => {
-  dbConnect();
   console.log(`Server running on port ${PORT}`);
 });
