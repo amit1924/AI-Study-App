@@ -98,21 +98,21 @@ const Navbar = () => {
           </Link>
           <Link
             className="block text-lg px-4 py-2 rounded-md hover:bg-white hover:text-blue-500 transition-all duration-300"
-            to="/chemistry"
+            to="/polity"
             onClick={() => setIsOpen(false)}
           >
             Polity
           </Link>
           <Link
             className="block text-lg px-4 py-2 rounded-md hover:bg-white hover:text-blue-500 transition-all duration-300"
-            to="/chemistry"
+            to="/geography"
             onClick={() => setIsOpen(false)}
           >
             Geography
           </Link>
           <Link
             className="block text-lg px-4 py-2 rounded-md hover:bg-white hover:text-blue-500 transition-all duration-300"
-            to="/chemistry"
+            to="/economics"
             onClick={() => setIsOpen(false)}
           >
             Economics
