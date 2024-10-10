@@ -11,7 +11,13 @@ const cors = require("cors");
 dotenv.config();
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://ai-study-app-frontend.vercel.app/", // Replace with your frontend URL
+    methods: ["GET"],
+    // credentials: true, // Enable sending cookies and headers with requests if necessary
+  })
+);
 
 // MongoDB connection
 

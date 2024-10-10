@@ -15,7 +15,7 @@ const Section = () => {
 
       try {
         const response = await fetch(
-          `http://localhost:3001/articles/${section}`
+          `https://ai-study-app.vercel.app/articles/${section}`
         );
 
         if (!response.ok) {
