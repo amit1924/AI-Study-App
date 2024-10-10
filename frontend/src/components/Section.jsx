@@ -17,6 +17,10 @@ const Section = () => {
         const response = await fetch(
           `https://ai-study-app.vercel.app/articles/${section}`
         );
+        console.log(`Fetching articles for section: ${section}`);
+        console.log(
+          `Requesting URL: https://ai-study-app.vercel.app/articles/${section}`
+        );
 
         if (!response.ok) {
           throw new Error(`Error fetching articles: ${response.statusText}`);

@@ -30,6 +30,9 @@ const dbConnect = async () => {
   }
 };
 
+app.get("/", (req, res) => {
+  app.send("Server is running");
+});
 // Function to fetch AI content for a specific section
 async function fetchContentFromGeminiAI(section) {
   try {
