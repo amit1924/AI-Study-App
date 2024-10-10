@@ -28,6 +28,9 @@ app.use(
   })
 );
 
+// Preflight response for all routes
+app.options("*", cors());
+
 // MongoDB connection
 
 const dbConnect = async () => {
