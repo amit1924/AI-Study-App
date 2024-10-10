@@ -14,7 +14,7 @@ const Article = () => {
       setError(null);
       try {
         const response = await fetch(
-          `http://localhost:3001/articles/detail/${id}`
+          `https://ai-study-app.vercel.app/articles/detail/${id}`
         );
         if (!response.ok) {
           throw new Error(`Error fetching article: ${response.statusText}`);
